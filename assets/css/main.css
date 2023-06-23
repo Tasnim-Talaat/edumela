@@ -1,0 +1,209 @@
+
+/* global */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap'); */
+:root {
+  --main-color: #ffb607;
+  --transition: 0.6s;
+  --color:#0f0e4d;
+  /* --font:'Montserrat Alternates', sans-serif; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:var(--color) !important;
+  /* font-family: var(--font); */
+}
+
+
+/* icon-up */
+.icon-up {
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icon-up i {
+  color: white;
+}
+
+
+/* start navbar    */
+
+.logo {
+  width: 20%;
+}
+
+.nav-link{
+  color: var(--color) !important;
+}
+.active{
+  color: var(--main-color) !important;
+}
+.nav-item{
+  position: relative;
+
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* start header */
+.banner {
+  background-image: url("../images/slider_bg01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(15, 14, 78, 0.9);;
+   /* rgba(0, 0, 0, 0.7); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.welcome {
+  text-align: center;
+}
+.welcome h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white !;
+}
+.para {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.btn {
+  /* background-color: var(--main-color); */
+  /* border: 1px solid var(--color); */
+  cursor: pointer;
+  margin: 10px 0 !important;
+  padding: 15px 30px !important;
+  transition: var(--transition);
+  /* border-radius: 50px; */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn:hover {
+  margin: 10px 0;
+  padding: 15px 30px;
+  background-color: var(--color) !important;
+  color: white;
+}
+
+/* start features*/
+.feature-col{
+  overflow:hidden;
+}
+.arrow-show span{
+  /* display: none; */
+  left:-90px;
+  transition: var(--transition);
+}
+.feature-col:hover .arrow-show span{
+  left:10px
+}
+.features{
+  height: 50vh;
+}
+.feature{
+  bottom: 30px;
+  left: 20%;
+  transform: translate(-10%,60%);
+}
+/* --------start courser------- */
+.btn-course:hover{
+  color: white !important;
+}
+
+/* start register*/
+.register {
+  background-image: url("../images/reg_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.time{
+  border-radius: 100%;
+  height: 140px;
+  width: 140px;
+  
+}
+.time:hover, .time:hover.time h2 ,.time:hover.time h4{
+  color: #ffb607 !important;
+  border-color: #ffb607 !important;
+}
+/* start feedback*/
+.feedback{
+  background-image: url("../images/testimonial_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.feedback-caption {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 5px;
+ 
+  
+}
+
+
+/* start JoinUs*/
+.Enroll{
+  background-color: var(--color) !important;
+}
+.Enroll:hover{
+  background-color: var(--main-color) !important;
+}
+
+/* start footer*/
+.upfooter {
+  background-color: var(--color) ;
+  width: 100%;
+}
+.upfooter h2{
+  color:white !important;
+
+}
+.upfooter p{
+  color:rgb(194, 188, 188) !important;
+
+}
+.foot {
+  background-color:#0d0c38;
+  width: 100%;
+}
+.copyright p{
+  color: white !important;
+}
+
